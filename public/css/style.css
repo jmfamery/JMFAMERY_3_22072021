@@ -14,16 +14,20 @@
   font-weight: normal;
   font-style: normal;
 }
-header {
-  font-family: "shrikhandregular", sans-serif;
+h1 {
+  font-family: "shrikhandregular", serif;
+  font-style: oblique;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+h2, h3, p {
+  font-family: "roboto_condensedregular", sans-serif;
 }
 
 /* Forme image provisoir */
-.restaurant__titre--Resto-1 img,
-.restaurant__titre--Resto-2 img,
-.restaurant__titre--Resto-3 img,
-.restaurant__titre--Resto-4 img,
-.menu_image img {
+.restaurant img,
+.carte img {
   width: 120px;
   height: 80px;
 }
