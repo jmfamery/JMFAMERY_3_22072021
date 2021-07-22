@@ -14,6 +14,11 @@
   font-weight: normal;
   font-style: normal;
 }
+header {
+  font-family: "shrikhandregular", sans-serif;
+}
+
+/* Forme image provisoir */
 .restaurant__titre--Resto-1 img,
 .restaurant__titre--Resto-2 img,
 .restaurant__titre--Resto-3 img,
