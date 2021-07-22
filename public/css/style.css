@@ -1,0 +1,26 @@
+/* Police Logo */
+@font-face {
+  font-family: "shrikhandregular";
+  src: url("/public/police/shrikhand/shrikhand-regular-webfont.eot");
+  src: url("/public/police/shrikhand/shrikhand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/public/police/shrikhand/shrikhand-regular-webfont.woff") format("woff"), url("/public/police/shrikhand/shrikhand-regular-webfont.ttf") format("truetype"), url("/public/police/shrikhand/shrikhand-regular-webfont.svg#shrikhandregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Police Texte */
+@font-face {
+  font-family: "roboto_condensedregular";
+  src: url("/public/police/roboto/robotocondensed-regular-webfont.eot");
+  src: url("/public/police/roboto/robotocondensed-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/public/police/roboto/robotocondensed-regular-webfont.woff") format("woff"), url("/public/police/roboto/robotocondensed-regular-webfont.ttf") format("truetype"), url("/public/police/roboto/robotocondensed-regular-webfont.svg#roboto_condensedregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.restaurant__titre--Resto-1 img,
+.restaurant__titre--Resto-2 img,
+.restaurant__titre--Resto-3 img,
+.restaurant__titre--Resto-4 img,
+.menu_image img {
+  width: 120px;
+  height: 80px;
+}
+
+/*# sourceMappingURL=style.css.map */
