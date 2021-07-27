@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30px;
+    border-bottom: 4px solid $couleur-header-border;
+    padding: 15px 0 10px 0;
+    &__accueil{
+        display: flex;
+        align-items: center;
+        color: $couleur-text;
+    }
+    &__logo{
+        display: flex;
+        justify-content: center;
+        object-fit: contain;
+        width:100%;
+    }
+}

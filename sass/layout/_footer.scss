@@ -1,0 +1,34 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: $couleur-inverser-fond;
+    &__logo{
+        display: flex;
+        justify-content: flex-start;
+        filter: invert(100%);
+        object-fit: contain;
+        height: 20px;
+        padding: 20px 5% 0 5%;
+    }
+
+    &__liste {
+        padding: 10px 5% 10px 5%;
+    }
+
+    &__liste ul{
+        padding: 0;
+    }
+
+    &__liste li{
+        padding-bottom: 10px;
+    }
+
+    &__liste a{
+        color: $couleur-inverser-text;        
+    }
+
+    &__liste i{
+        padding-right: 10px;    
+    }
+
+}

@@ -1,0 +1,23 @@
+/* Police Logo */
+@font-face {
+    font-family: 'shrikhandregular';
+    src: url('../police/shrikland/shrikhand-regular-webfont.eot');
+    src: url('../police/shrikland/shrikhand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../police/shrikland/shrikhand-regular-webfont.woff') format('woff'),
+        url('../police/shrikland/shrikhand-regular-webfont.ttf') format('truetype'),
+        url('../police/shrikland/shrikhand-regular-webfont.svg#shrikhandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+/* Police Texte */
+@font-face {
+    font-family: 'roboto_condensedregular';
+    src: url('../police/roboto/robotocondensed-regular-webfont.eot');
+    src: url('../police/roboto/robotocondensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../police/roboto/robotocondensed-regular-webfont.woff') format('woff'),
+         url('../police/roboto/robotocondensed-regular-webfont.ttf') format('truetype'),
+         url('../police/roboto/robotocondensed-regular-webfont.svg#roboto_condensedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

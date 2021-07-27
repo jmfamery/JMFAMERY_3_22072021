@@ -1,10 +1,39 @@
-h1{
+h1 {
     font-family: 'shrikhandregular', serif;
-    font-style: oblique;
     font-size: 2rem;
     font-weight: 900;
+    margin: 0;
 }
 
-h2, h3, p{
-    font-family: 'roboto_condensedregular', sans-serif;
+h2 {
+    font-family: 'roboto_condensedregular';
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'roboto_condensedregular';
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: grey;
+    margin: 0;
+}
+
+h4 {
+    font-family: 'roboto_condensedregular';
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
+    font-family: 'roboto_condensedregular';
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+footer{
+    font-family: 'roboto_condensedregular';
+    margin: 0;
 }

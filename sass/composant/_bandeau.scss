@@ -1,0 +1,29 @@
+.bandeau {
+    display: flex;
+    flex-direction: column;
+    &__image img{
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__titre {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        background-color: $couleur-explorer;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        position: relative;
+        height: 70px;
+        margin-top: -30px;
+    }
+
+    &__note-vide {
+        
+    }
+
+    &__note-plein {
+        color: $couleur-secondaire; 
+    }
+}

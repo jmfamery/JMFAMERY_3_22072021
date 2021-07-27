@@ -1,0 +1,29 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: $couleur-explorer;
+    padding: 0 5% 0 5%;
+    &__epd {
+        padding: 3% 0 3% 0;
+    }
+
+    &__titre {
+        padding-bottom: 3%;
+    }
+
+    &__descriptif {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: $couleur-inverser-text;
+        margin-bottom: 2%;
+    }
+
+    &__detail {
+        width: 85%;
+    }
+
+    &__prix {
+        align-self: end;
+    }
+}

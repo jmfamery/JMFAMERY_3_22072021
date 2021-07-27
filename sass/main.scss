@@ -1,8 +1,17 @@
-@import "./base/polices";
+@import "./base/police";
 @import "./base/typography";
 
 @import "./utils/variables";
+@import "./utils/parametres";
 
+@import "./layout/header";
+
+@import "./composant/lieu";
+@import "./composant/explorer";
+@import "./composant/fonctionnement";
 @import "./composant/restaurant";
 
-@import "./layout/form";
+@import "./composant/bandeau";
+@import "./composant/menu";
+
+@import "./layout/footer";
