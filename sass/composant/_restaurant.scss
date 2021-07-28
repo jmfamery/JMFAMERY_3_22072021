@@ -36,10 +36,18 @@
 
         &__note-vide {
             display: flex;
-            align-items: center;    
+            align-items: center; 
         }
 
         &__note-plein {
+            display:none; 
+        }
+
+        &__note-vide :hover {
+            display: none;
+        }
+
+        &__note-plein :hover {
             display: flex;
             align-items: center;
             color: $couleur-secondaire;  

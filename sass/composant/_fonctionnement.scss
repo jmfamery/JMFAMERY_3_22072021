@@ -15,17 +15,23 @@
         flex-direction: row;
         align-items: center;
         padding-bottom: 5%;
+        :hover {
+            background-color: lighten($couleur-secondaire,20%);
+            }
+        :hover >i {
+            color: darken($couleur-primaire,10%);
+        }
     }
 
     &__numero {
         display:flex;
         justify-content: center;
         align-items: center;
-        background-color: $couleur-primaire;
+        background-color: darken($couleur-primaire,10%);
         color: $couleur-inverser-text;
         border-radius: 20px;
-        height: 1.1rem;
-        width: 1.1rem;
+        height: 1.3rem;
+        width: 1.3rem;
         position: relative;
         margin-right: -0.7rem;
     }
@@ -37,8 +43,8 @@
         border-radius: 20px;
         height: 4rem;
         width: 100%;
-        > i, p {
+        i, p {
             margin-left: 1.7rem;
-        }
+        } 
     }
 }

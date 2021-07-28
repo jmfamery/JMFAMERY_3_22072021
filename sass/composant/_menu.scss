@@ -15,15 +15,45 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
         background-color: $couleur-inverser-text;
-        margin-bottom: 2%;
+        border-radius: 10px;
+        height: 60px;
+        padding-left: 5%;
+        margin-bottom: 4%;
     }
 
     &__detail {
-        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        > h4, p {
+            overflow: hidden;
+            height: 1.1rem;
+        }
+
+        > h4 {
+            padding-bottom: 5px;
+        }
     }
 
     &__prix {
+        display: flex;
         align-self: end;
+        width: 15%;
+        padding-bottom: 8px;
+    }
+
+    &__valider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $couleur-tertiare;
+        color: $couleur-inverser-text;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 15%;
+        height: 60px;
     }
 }

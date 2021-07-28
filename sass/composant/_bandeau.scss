@@ -19,11 +19,16 @@
         margin-top: -30px;
     }
 
-    &__note-vide {
-        
+    &__note-plein {
+        display: none;
     }
 
-    &__note-plein {
+    &__note-vide :hover {
+        display: none;
+    }
+
+    &__note-plein :hover{
+        display: flex;
         color: $couleur-secondaire; 
     }
 }

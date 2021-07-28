@@ -17,13 +17,14 @@
         display:flex;
         justify-content: center;
         align-items: center;
-        background-color: $couleur-primaire;
+        background: linear-gradient(darken($couleur-secondaire,10%),darken($couleur-primaire,10%));
+        opacity: 0.9;
         color: $couleur-inverser-text;
         border-radius: 20px;
         height: 2.5rem;
         width: 12rem;
-        & :hover {
-            background-color: blue;
+        &:hover {
+            opacity: 0.6;
         }
     }
 }
