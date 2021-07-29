@@ -1,7 +1,7 @@
-.etablissements{
+.restaurants{
     display: flex;
     flex-direction: column;
-    padding: 10% 0 5% 0;
+    padding-top: 35px;
     background-color: $couleur-explorer;
     &__titre {
         margin: 0 5% 5% 5%;
@@ -11,7 +11,7 @@
         margin: 0 5% 5% 5%;
     }
 
-    .restaurant {
+    .resto {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -34,13 +34,9 @@
             width: 85%;
         }
 
-        &__note-vide {
+        &__note-vide, &__note-plein {
             display: flex;
             align-items: center; 
-        }
-
-        &__note-plein {
-            display:none; 
         }
 
         &__note-vide :hover {

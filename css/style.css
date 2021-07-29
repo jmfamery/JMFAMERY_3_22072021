@@ -116,7 +116,6 @@ li {
   justify-content: center;
   align-items: center;
   background: linear-gradient(#ff46cc, #782cd3);
-  opacity: 0.9;
   color: white;
   border-radius: 20px;
   height: 2.5rem;
@@ -173,19 +172,19 @@ li {
   margin-left: 1.7rem;
 }
 
-.etablissements {
+.restaurants {
   display: flex;
   flex-direction: column;
-  padding: 10% 0 5% 0;
+  padding-top: 35px;
   background-color: #e6e6e6;
 }
-.etablissements__titre {
+.restaurants__titre {
   margin: 0 5% 5% 5%;
 }
-.etablissements__liste {
+.restaurants__liste {
   margin: 0 5% 5% 5%;
 }
-.etablissements .restaurant {
+.restaurants .resto {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -194,30 +193,27 @@ li {
   margin-bottom: 5%;
   height: 220px;
 }
-.etablissements .restaurant__image {
+.restaurants .resto__image {
   object-fit: cover;
   height: 150px;
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.etablissements .restaurant__descriptif {
+.restaurants .resto__descriptif {
   display: flex;
   flex-direction: column;
   padding: 10px 0 10px 15px;
   width: 85%;
 }
-.etablissements .restaurant__note-vide {
+.restaurants .resto__note-vide, .restaurants .resto__note-plein {
   display: flex;
   align-items: center;
 }
-.etablissements .restaurant__note-plein {
+.restaurants .resto__note-vide :hover {
   display: none;
 }
-.etablissements .restaurant__note-vide :hover {
-  display: none;
-}
-.etablissements .restaurant__note-plein :hover {
+.restaurants .resto__note-plein :hover {
   display: flex;
   align-items: center;
   color: #FF79DA;
@@ -243,9 +239,6 @@ li {
   position: relative;
   height: 70px;
   margin-top: -30px;
-}
-.bandeau__note-plein {
-  display: none;
 }
 .bandeau__note-vide :hover {
   display: none;
@@ -320,7 +313,6 @@ li {
   justify-content: center;
   align-items: center;
   background: linear-gradient(#ff46cc, #8641d8);
-  opacity: 0.9;
   color: white;
   border-radius: 20px;
   height: 2.5rem;
