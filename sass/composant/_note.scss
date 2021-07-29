@@ -1,0 +1,25 @@
+.note {
+    display: flex;
+    align-self: center;
+    &:hover {
+        background-image: linear-gradient(0deg,#9356dc,#ff79da);
+        & .note__plein {
+            display: inline;
+            mix-blend-mode: lighten;
+            &.rt {
+                background-color: white;
+                }
+            &.bd {
+                background-color: $couleur-fond-autres;
+            }
+        }
+        
+        & .note__vide {
+            display: none;
+        }
+    }
+
+    &__plein {
+        display: none;        
+    }
+}

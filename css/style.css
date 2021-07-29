@@ -83,6 +83,43 @@ li {
   width: 100%;
 }
 
+.explorer__restaurants, .commander__valider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#ff46cc, #782cd3);
+  color: white;
+  border-radius: 20px;
+  padding: 0.7rem 1rem;
+}
+.explorer__restaurants:hover, .commander__valider:hover {
+  opacity: 0.6;
+}
+
+.note {
+  display: flex;
+  align-self: center;
+}
+.note:hover {
+  background-image: linear-gradient(0deg, #9356dc, #ff79da);
+}
+.note:hover .note__plein {
+  display: inline;
+  mix-blend-mode: lighten;
+}
+.note:hover .note__plein.rt {
+  background-color: white;
+}
+.note:hover .note__plein.bd {
+  background-color: #e6e6e6;
+}
+.note:hover .note__vide {
+  display: none;
+}
+.note__plein {
+  display: none;
+}
+
 .lieu {
   display: flex;
   flex-direction: row;
@@ -105,24 +142,11 @@ li {
   background-color: #e6e6e6;
   padding: 25px 0 50px 0;
 }
-.explorer > h2 {
+.explorer h2 {
   margin: 0 15% 5px 15%;
 }
-.explorer > h3 {
+.explorer h3 {
   margin: 0 7% 20px 7%;
-}
-.explorer__restaurant {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(#ff46cc, #782cd3);
-  color: white;
-  border-radius: 20px;
-  height: 2.5rem;
-  width: 12rem;
-}
-.explorer__restaurant:hover {
-  opacity: 0.6;
 }
 
 .fonctionnement {
@@ -130,8 +154,8 @@ li {
   flex-direction: column;
   margin: 8% 5% 5% 5%;
 }
-.fonctionnement > h2 {
-  padding: 0 15% 5% 15%;
+.fonctionnement h2 {
+  padding-bottom: 5%;
 }
 .fonctionnement__liste ul {
   padding-left: 0;
@@ -142,13 +166,7 @@ li {
   align-items: center;
   padding-bottom: 5%;
 }
-.fonctionnement__detail :hover {
-  background-color: #ffdff6;
-}
-.fonctionnement__detail :hover > i {
-  color: #782cd3;
-}
-.fonctionnement__numero {
+.fonctionnement__detail .fonctionnement__numero {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,7 +178,7 @@ li {
   position: relative;
   margin-right: -0.7rem;
 }
-.fonctionnement__text {
+.fonctionnement__detail .fonctionnement__text {
   display: flex;
   align-items: center;
   background-color: #e6e6e6;
@@ -168,8 +186,14 @@ li {
   height: 4rem;
   width: 100%;
 }
-.fonctionnement__text i, .fonctionnement__text p {
+.fonctionnement__detail .fonctionnement__text i, .fonctionnement__detail .fonctionnement__text p {
   margin-left: 1.7rem;
+}
+.fonctionnement__detail .fonctionnement__text:hover {
+  background-color: #ffdff6;
+}
+.fonctionnement__detail .fonctionnement__text:hover i {
+  color: #782cd3;
 }
 
 .restaurants {
@@ -232,20 +256,13 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
   background-color: #e6e6e6;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   position: relative;
-  height: 70px;
+  height: 100px;
   margin-top: -30px;
-}
-.bandeau__note-vide :hover {
-  display: none;
-}
-.bandeau__note-plein :hover {
-  display: flex;
-  color: #FF79DA;
 }
 
 .menu {
@@ -254,10 +271,7 @@ li {
   background-color: #e6e6e6;
   padding: 0 5% 0 5%;
 }
-.menu__epd {
-  padding: 3% 0 3% 0;
-}
-.menu__titre {
+.menu__epd, .menu__titre {
   padding-bottom: 3%;
 }
 .menu__descriptif {
@@ -277,12 +291,12 @@ li {
   justify-content: center;
   width: 70%;
 }
-.menu__detail > h4, .menu__detail p {
+.menu__detail h4 {
+  padding-bottom: 5px;
+}
+.menu__detail h4 p {
   overflow: hidden;
   height: 1.1rem;
-}
-.menu__detail > h4 {
-  padding-bottom: 5px;
 }
 .menu__prix {
   display: flex;
@@ -307,19 +321,6 @@ li {
   justify-content: center;
   background-color: #e6e6e6;
   padding: 10px 0 50px 0;
-}
-.commander__bouton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(#ff46cc, #8641d8);
-  color: white;
-  border-radius: 20px;
-  height: 2.5rem;
-  width: 10rem;
-}
-.commander__bouton:hover {
-  opacity: 0.6;
 }
 
 .footer {

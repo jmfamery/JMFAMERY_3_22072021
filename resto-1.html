@@ -3,8 +3,8 @@
     <!-- Données de base -->
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="css/style.css" />
         <script src="https://kit.fontawesome.com/9cee28601f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css" />
         <title>Ohmyfood : La palette du goût</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -26,8 +26,10 @@
 
             <div class="bandeau__titre">
                 <h1>La palette du goût</h1>
-                <span class="bandeau__note-vide" href=""><i class="far fa-heart"></i></span>
-                <span class="bandeau__note-plein" href=""><i class="fas fa-heart"></i></span>
+                <span class="note">
+                    <i class="far fa-heart note__vide"></i>
+                    <i class="fas fa-heart note__plein bd"></i>
+                </span>
             </div>
         </section>
 
@@ -133,7 +135,7 @@
         </section>
 
         <section class="commander">
-            <a class="commander__bouton" href="#">Commander</a>
+            <a class="commander__valider" href="#">Commander</a>
         </section>
 
         <!-- Information -->

@@ -10,25 +10,12 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: flex-end;
-        background-color: $couleur-explorer;
+        align-items: center;
+        background-color: $couleur-fond-autres;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
         position: relative;
-        height: 70px;
+        height: 100px;
         margin-top: -30px;
-    }
-
-    // &__note-plein {
-    //     display: none;
-    // }
-
-    &__note-vide :hover {
-        display: none;
-    }
-
-    &__note-plein :hover {
-        display: flex;
-        color: $couleur-secondaire;
     }
 }

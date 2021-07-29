@@ -1,19 +1,6 @@
 .commander {
     display: flex;
     justify-content: center;
-    background-color: $couleur-explorer;
+    background-color: $couleur-fond-autres;
     padding: 10px 0 50px 0;
-    &__bouton {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(darken($couleur-secondaire,10%),darken($couleur-primaire,5%));
-        color: $couleur-inverser-text;
-        border-radius: 20px;
-        height: 2.5rem;
-        width: 10rem;
-        &:hover {
-            opacity: 0.6;
-        }
-    }
 }

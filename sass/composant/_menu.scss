@@ -1,14 +1,10 @@
 .menu {
     display: flex;
     flex-direction: column;
-    background-color: $couleur-explorer;
+    background-color: $couleur-fond-autres;
     padding: 0 5% 0 5%;
-    &__epd {
-        padding: 3% 0 3% 0;
-    }
-
-    &__titre {
-        padding-bottom: 3%;
+    &__epd, &__titre {
+         padding-bottom: 3%;
     }
 
     &__descriptif {
@@ -28,13 +24,12 @@
         flex-direction: column;
         justify-content: center;
         width: 70%;
-        > h4, p {
-            overflow: hidden;
-            height: 1.1rem;
-        }
-
-        > h4 {
+        h4 {
             padding-bottom: 5px;
+            p {
+                overflow: hidden;
+                height: 1.1rem;
+            }
         }
     }
 

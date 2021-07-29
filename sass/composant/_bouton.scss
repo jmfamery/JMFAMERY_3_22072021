@@ -1,0 +1,12 @@
+.explorer__restaurants, .commander__valider {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(darken($couleur-secondaire,10%),darken($couleur-primaire,10%));
+    color: $couleur-inverser-text;
+    border-radius: 20px;
+    padding: 0.7rem 1rem;
+    &:hover {
+        opacity: 0.6;
+    }
+}
