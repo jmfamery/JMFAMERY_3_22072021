@@ -83,7 +83,7 @@ li {
   width: 100%;
 }
 
-.explorer__restaurants, .commander__valider {
+.bouton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +92,7 @@ li {
   border-radius: 20px;
   padding: 0.7rem 1rem;
 }
-.explorer__restaurants:hover, .commander__valider:hover {
+.bouton:hover {
   opacity: 0.6;
 }
 
@@ -107,10 +107,10 @@ li {
   display: inline;
   mix-blend-mode: lighten;
 }
-.note:hover .note__plein.rt {
+.note:hover .note__plein.rnp {
   background-color: white;
 }
-.note:hover .note__plein.bd {
+.note:hover .note__plein.bnp {
   background-color: #e6e6e6;
 }
 .note:hover .note__vide {
@@ -224,6 +224,16 @@ li {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+.restaurants .resto__nouveau {
+  background-color: #99E2D0;
+  color: #1b6150;
+  position: relative;
+  height: 24px;
+  margin: -140px 0 116px 75%;
+}
+.restaurants .resto__nouveau p {
+  padding: 3px 10px;
+}
 .restaurants .resto__descriptif {
   display: flex;
   flex-direction: column;
@@ -277,34 +287,36 @@ li {
 .menu__descriptif {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
   background-color: white;
   border-radius: 10px;
+  white-space: nowrap;
   height: 60px;
   padding-left: 5%;
   margin-bottom: 4%;
 }
-.menu__detail {
+.menu__descriptif .menu__detail {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 70%;
+  width: 90%;
+  overflow: hidden;
 }
-.menu__detail h4 {
+.menu__descriptif .menu__detail h4, .menu__descriptif .menu__detail p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__descriptif .menu__detail h4 {
   padding-bottom: 5px;
 }
-.menu__detail h4 p {
-  overflow: hidden;
-  height: 1.1rem;
-}
-.menu__prix {
+.menu__descriptif .menu__prix {
   display: flex;
-  align-self: end;
-  width: 15%;
-  padding-bottom: 8px;
+  align-items: end;
+  padding: 0 15px 7px 5px;
 }
-.menu__valider {
+.menu__descriptif .menu__valider {
+  display: none;
+}
+.menu__descriptif:hover .menu__valider {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -312,8 +324,12 @@ li {
   color: white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 15%;
+  width: 35px;
   height: 60px;
+}
+.menu__descriptif:active .menu__valider {
+  transform: rotate(360deg);
+  transition: transform 1000ms;
 }
 
 .commander {

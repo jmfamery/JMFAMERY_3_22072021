@@ -10,45 +10,53 @@
     &__descriptif {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
         background-color: $couleur-inverser-text;
         border-radius: 10px;
+        white-space: nowrap;
         height: 60px;
         padding-left: 5%;
         margin-bottom: 4%;
-    }
-
-    &__detail {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 70%;
-        h4 {
-            padding-bottom: 5px;
-            p {
+        
+        & .menu__detail {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 90%;
+            overflow: hidden;
+            h4, p {
                 overflow: hidden;
-                height: 1.1rem;
+                text-overflow: ellipsis;
+            }
+            h4 {
+                padding-bottom: 5px;
             }
         }
-    }
 
-    &__prix {
-        display: flex;
-        align-self: end;
-        width: 15%;
-        padding-bottom: 8px;
-    }
+        & .menu__prix {
+            display: flex;
+            align-items: end;
+            padding: 0 15px 7px 5px;
+        }
 
-    &__valider {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $couleur-tertiare;
-        color: $couleur-inverser-text;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        width: 15%;
-        height: 60px;
+        & .menu__valider{
+           display: none;
+        }
+
+        &:hover .menu__valider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $couleur-tertiare;
+            color: $couleur-inverser-text;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            width: 35px;
+            height: 60px;
+        }
+
+        &:active .menu__valider {
+            transform: rotate(360deg);
+            transition: transform 1000ms;
+        }
     }
 }

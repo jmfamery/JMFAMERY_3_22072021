@@ -6,10 +6,10 @@
         & .note__plein {
             display: inline;
             mix-blend-mode: lighten;
-            &.rt {
-                background-color: white;
+            &.rnp {
+                background-color: $couleur-fond;
                 }
-            &.bd {
+            &.bnp {
                 background-color: $couleur-fond-autres;
             }
         }
