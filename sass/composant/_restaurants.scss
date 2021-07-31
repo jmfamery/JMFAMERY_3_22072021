@@ -45,20 +45,5 @@
             padding: 10px 0 10px 15px;
             width: 85%;
         }
-
-        &__note-vide, &__note-plein {
-            display: flex;
-            align-items: center; 
-        }
-
-        &__note-vide :hover {
-            display: none;
-        }
-
-        &__note-plein :hover {
-            display: flex;
-            align-items: center;
-            color: $couleur-secondaire;  
-        }
     }
 }

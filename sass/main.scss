@@ -3,7 +3,11 @@
 
 @import "./utils/variables";
 @import "./utils/parametres";
+@import "./utils/mixing";
 
+@import "./composant/animation";
+
+@import "./layout/demarrage";
 @import "./layout/header";
 
 @import "./composant/bouton";
