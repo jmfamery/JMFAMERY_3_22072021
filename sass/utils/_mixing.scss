@@ -6,7 +6,7 @@
 }
 
 @mixin bouton-valider {
-    animation : valider 0.5s linear
+    animation : valider 0.5s ease-in-out
 }
 
 /* Bouton coeur */
