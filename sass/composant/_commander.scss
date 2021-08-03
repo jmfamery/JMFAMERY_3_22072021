@@ -3,4 +3,8 @@
     justify-content: center;
     background-color: $couleur-fond-autres;
     padding: 10px 0 50px 0;
+
+    &__valider{
+        @include bouton;
+    }
 }

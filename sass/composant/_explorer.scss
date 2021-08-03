@@ -12,4 +12,8 @@
     h3{
         margin: 0 7% 20px 7%;
     }
+
+    &__restaurants{
+        @include bouton;
+    }
 }

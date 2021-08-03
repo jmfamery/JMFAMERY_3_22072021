@@ -3,59 +3,77 @@
     flex-direction: column;
     background-color: $couleur-fond-autres;
     padding: 0 5% 0 5%;
-    &__epd, &__titre {
-         padding-bottom: 3%;
+    &__entrees {
+        padding-bottom: 3%;
+        & .menu__titre{
+            @include menu-titre;
+            @include menu-deroulant(0.1s);
+        }
+
+        & .menu__descriptif-e1 {
+            @include entrees-plats-desserts;
+            @include menu-deroulant(0.2s);
+        }
+        
+        & .menu__descriptif-e2 {
+            @include entrees-plats-desserts;
+            @include menu-deroulant(0.3s);
+        }
+        
+        & .menu__descriptif-e3 {
+            @include entrees-plats-desserts;
+            @include menu-deroulant(0.4s);
+        }
+    }
+    
+    &__plats {
+        padding-bottom: 3%;
+        & .menu__titre{
+            @include menu-titre;
+            @include menu-deroulant(0.5s);
+        }
+
+        & .menu__descriptif-p1 {
+            @include entrees-plats-desserts;
+            @include menu-deroulant(0.6s);
+        }
+        
+        & .menu__descriptif-p2 {
+            @include entrees-plats-desserts;
+            @include menu-deroulant(0.7s);
+        }
+        
+        & .menu__descriptif-p3 {
+            @include entrees-plats-desserts;
+            @include menu-deroulant(0.8s);
+        }
+                
+        & .menu__descriptif-p4 {
+            @include entrees-plats-desserts;
+            @include menu-deroulant(0.9s);
+        }
     }
 
-    &__descriptif {
-        display: flex;
-        flex-direction: row;
-        background-color: $couleur-inverser-text;
-        border-radius: 10px;
-        white-space: nowrap;
-        height: 60px;
-        padding-left: 5%;
-        margin-bottom: 4%;
+    &__desserts {
+        padding-bottom: 3%;
+        & .menu__titre{
+            @include menu-titre;
+            @include menu-deroulant(1s);
+        }
+
+        & .menu__descriptif-d1 {
+            @include entrees-plats-desserts;
+            @include menu-deroulant(1.1s);
+        }
         
-        & .menu__detail {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 90%;
-            overflow: hidden;
-            h4, p {
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
-            h4 {
-                padding-bottom: 5px;
-            }
+        & .menu__descriptif-d2 {
+            @include entrees-plats-desserts;
+            @include menu-deroulant(1.2s);
         }
-
-        & .menu__prix {
-            display: flex;
-            align-items: end;
-            padding: 0 15px 7px 5px;
-        }
-
-        & .menu__valider{
-           display: none;
-        }
-
-        &:hover .menu__valider {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: $couleur-tertiaire;
-            color: $couleur-inverser-text;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-            width: 50px;
-            height: 60px;
-        }
-
-        &:hover .menu__valider i{
-            @include bouton-valider;
+        
+        & .menu__descriptif-d3 {
+            @include entrees-plats-desserts;
+            @include menu-deroulant(1.3s);
         }
     }
 }

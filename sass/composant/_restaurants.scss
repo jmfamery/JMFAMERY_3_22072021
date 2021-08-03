@@ -15,7 +15,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        border-radius: 20px;
+        border-radius: 10px;
         background-color: $couleur-fond;
         margin-bottom: 5%;
         height: 220px;
@@ -24,16 +24,17 @@
             object-fit: cover;
             height: 150px;
             width: 100%;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
         }
 
         &__nouveau {
             background-color: $couleur-tertiaire;
             color: darken($couleur-tertiaire, 50%);
             position: relative;
+            top: -140px;
+            right: -74%;  
             height: 24px;
-            margin: -140px 0 116px 75%;   
             p {
                 padding: 3px 10px;
             }
@@ -44,6 +45,10 @@
             flex-direction: column;
             padding: 10px 0 10px 15px;
             width: 85%;
+        }
+
+        &__note {
+            @include note-coeur ($couleur-fond)
         }
     }
 }

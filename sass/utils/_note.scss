@@ -1,18 +1,14 @@
-.note {
+@mixin note-coeur ($couleur-fond-coeur) {
     display: flex;
     align-self: center;
+    font-size: 1.3rem;
     &:hover {
         background-image: linear-gradient(0deg,#9356dc,#ff79da);
         @include bouton-coeur;
         & .note__plein {
             display: inline;
             mix-blend-mode: lighten;
-            &.rnp {
-                background-color: $couleur-fond;
-                }
-            &.bnp {
-                background-color: $couleur-fond-autres;
-            }
+            background-color: $couleur-fond-coeur;
         }
         
         & .note__vide {
@@ -20,7 +16,7 @@
         }
     }
 
-    &__plein {
+    & .note__plein {
         display: none;        
     }
 }

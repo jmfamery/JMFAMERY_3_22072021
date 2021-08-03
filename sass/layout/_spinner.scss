@@ -5,40 +5,19 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    background-color: hsla(0,0%,100%,0.9);
-    z-index: 1;
-    animation: temps 0.5s; 
-    animation-delay: 3s;
-    animation-fill-mode: both;
+    @include spinner-couverts;
 
-    @keyframes temps {
-        100% {opacity: 0;z-index: -1;}
-    }
-
-    & .couverts {
-        &__primaire{
-            animation : 1s linear 3 mouvement;
-            color: $couleur-primaire;
-            margin-right: 10px;
+    &__couverts {
+        & .couverts__primaire{
+            @include couverts-mouvement($couleur-primaire)
         }
     
-        &__secondaire{
-            animation : 1s linear 3 mouvement;
-            color: $couleur-secondaire;
-            margin-right: 10px;
+        & .couverts__secondaire{
+            @include couverts-mouvement($couleur-secondaire)
         }
     
-        &__tertiaire{
-            animation : 1s linear 3 mouvement;
-            color: $couleur-tertiaire;
-        }
-
-        @keyframes mouvement {
-            0% {transform: rotate(0deg)};
-            25% {transform: rotate(90deg)};
-            50% {transform: rotate(0deg)};
-            75% {transform: rotate(-90deg)};
-            100% {transform: rotate(0deg)};
+        & .couverts__tertiaire{
+            @include couverts-mouvement($couleur-tertiaire)
         }
     }
 }

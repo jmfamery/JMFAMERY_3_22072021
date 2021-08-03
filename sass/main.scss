@@ -3,13 +3,14 @@
 
 @import "./utils/variables";
 @import "./utils/parametres";
-@import "./utils/mixing";
+@import "./utils/animations";
+@import "./utils/bouton";
+@import "./utils/note";
+@import "./utils/menu-titre";
+@import "./utils/entrees-plats-desserts";
 
 @import "./layout/spinner";
 @import "./layout/header";
-
-@import "./composant/bouton";
-@import "./composant/note";
 
 @import "./composant/lieu";
 @import "./composant/explorer";
