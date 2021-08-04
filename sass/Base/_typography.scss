@@ -14,7 +14,7 @@ h2 {
 
 h3 {
     font-family: 'roboto_condensedregular';
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 100;
     color: grey;
     margin: 0;
@@ -22,12 +22,18 @@ h3 {
 
 h4 {
     font-family: 'roboto_condensedregular';
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bold;
     margin: 0;
 }
 
 h5 {
+    font-family: 'roboto_condensedregular';
+    font-size: 1rem;
+    margin: 0;
+}
+
+h6 {
     font-family: 'roboto_condensedregular';
     font-size: 0.9rem;
     margin: 0;
@@ -35,7 +41,8 @@ h5 {
 
 p {
     font-family: 'roboto_condensedregular';
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    color: grey;
     margin: 0;
 }
 

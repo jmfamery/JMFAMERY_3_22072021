@@ -4,7 +4,7 @@
     background-color: $couleur-fond-autres;
     padding: 0 5% 0 5%;
     &__entrees {
-        padding-bottom: 3%;
+        padding-bottom: 20px;
         & .menu__titre{
             @include menu-titre;
             @include menu-deroulant(0.1s);
@@ -24,38 +24,38 @@
             @include entrees-plats-desserts;
             @include menu-deroulant(0.4s);
         }
+
+        & .menu__descriptif-e4 {
+            @include entrees-plats-desserts;
+            @include menu-deroulant(0.5s);
+        }
     }
     
     &__plats {
-        padding-bottom: 3%;
+        padding-bottom: 20px;
         & .menu__titre{
             @include menu-titre;
-            @include menu-deroulant(0.5s);
+            @include menu-deroulant(0.6s);
         }
 
         & .menu__descriptif-p1 {
             @include entrees-plats-desserts;
-            @include menu-deroulant(0.6s);
+            @include menu-deroulant(0.7s);
         }
         
         & .menu__descriptif-p2 {
             @include entrees-plats-desserts;
-            @include menu-deroulant(0.7s);
+            @include menu-deroulant(0.8s);
         }
         
         & .menu__descriptif-p3 {
-            @include entrees-plats-desserts;
-            @include menu-deroulant(0.8s);
-        }
-                
-        & .menu__descriptif-p4 {
             @include entrees-plats-desserts;
             @include menu-deroulant(0.9s);
         }
     }
 
     &__desserts {
-        padding-bottom: 3%;
+        padding-bottom: 20px;
         & .menu__titre{
             @include menu-titre;
             @include menu-deroulant(1s);
@@ -74,6 +74,17 @@
         & .menu__descriptif-d3 {
             @include entrees-plats-desserts;
             @include menu-deroulant(1.3s);
+        }
+    }
+}
+
+@media (min-width: 1000px){
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &__entrees, &__plats, &__desserts {
+            width: 32%;
         }
     }
 }

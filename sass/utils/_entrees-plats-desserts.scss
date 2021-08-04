@@ -1,11 +1,12 @@
 @mixin entrees-plats-desserts{
     display: flex;
     background-color: $couleur-inverser-text;
+    box-shadow: 5px 5px 5px $couleur-ombre;
     border-radius: 10px;
     white-space: nowrap;
     height: 60px;
     padding-left: 1rem;
-    margin-bottom: 4%;
+    margin-bottom: 15px;
         
     & .menu__detail {
         display: flex;

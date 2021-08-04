@@ -3,7 +3,6 @@
     flex-direction: row;
     justify-content: space-between;
     height: 30px;
-    border-bottom: 4px solid $couleur-header-border;
     padding: 15px 0 10px 0;
     &__accueil{
         display: flex;
@@ -14,6 +13,7 @@
         display: flex;
         justify-content: center;
         object-fit: contain;
+        height: 24px;
         width:100%;
     }
 }

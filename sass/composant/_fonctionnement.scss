@@ -1,48 +1,64 @@
 .fonctionnement{
     display: flex;
     flex-direction: column;
-    margin: 8% 5% 5% 5%;
+    margin: 25px 5% 15px 5%;
     h2{
-        padding-bottom: 5%;
+        padding-bottom: 10px;
     }
 
     &__liste ul {
         padding-left: 0;
-    }
 
-    &__detail {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-bottom: 5%;
-        & .fonctionnement__numero {
-            display:flex;
-            justify-content: center;
+        & .fonctionnement__detail {
+            display: flex;
+            flex-direction: row;
             align-items: center;
-            background-color: darken($couleur-primaire,10%);
-            color: $couleur-inverser-text;
-            border-radius: 20px;
-            height: 1.3rem;
-            width: 1.3rem;
-            position: relative;
-            margin-right: -0.7rem;
-        }
-    
-        & .fonctionnement__text {
-            display:flex;
-            align-items: center;
-            background-color: $couleur-fond-autres;
-            border-radius: 20px;
-            height: 4rem;
-            width: 100%;
-            i, h5 {
-                margin-left: 1.7rem;
+            padding-bottom: 25px;
+            & .fonctionnement__numero {
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                background-color: darken($couleur-primaire, 10%);
+                color: $couleur-inverser-text;
+                border-radius: 20px;
+                height: 1.3rem;
+                width: 1.3rem;
+                position: relative;
+                right: -0.7rem;
             }
-            &:hover {
-                background-color: lighten($couleur-secondaire,20%);
-                    i {
-                        color: darken($couleur-primaire,10%);
-                    }
+        
+            & .fonctionnement__text {
+                display:flex;
+                align-items: center;
+                background-color: $couleur-fond-autres;
+                box-shadow: 5px 5px 5px $couleur-ombre;
+                border-radius: 20px;
+                height: 4rem;
+                width: 100%;
+                i, h5 {
+                    margin-left: 1.7rem;
+                }
+                &:hover {
+                    background-color: lighten($couleur-primaire, 33%);
+                    box-shadow: 5px 5px 5px $couleur-ombre;
+                        i {
+                            color: darken($couleur-primaire, 10%);
+                        }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px){
+    .fonctionnement{
+        &__liste ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            & .fonctionnement__detail {
+                width: 33%;
             }
         }
     }

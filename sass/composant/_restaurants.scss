@@ -4,51 +4,120 @@
     padding-top: 35px;
     background-color: $couleur-fond-autres;
     &__titre {
-        margin: 0 5% 5% 5%;
+        margin: 0 5% 20px 5%;
     }
 
     &__liste {
-        margin: 0 5% 5% 5%;
-    }
-
-    .resto {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        border-radius: 10px;
-        background-color: $couleur-fond;
-        margin-bottom: 5%;
-        height: 220px;
-        
-        &__image {
-            object-fit: cover;
-            height: 150px;
-            width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-
-        &__nouveau {
-            background-color: $couleur-tertiaire;
-            color: darken($couleur-tertiaire, 50%);
-            position: relative;
-            top: -140px;
-            right: -74%;  
-            height: 24px;
-            p {
-                padding: 3px 10px;
+        margin: 0 5% 15px 5%;
+        & .resto {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-radius: 10px;
+            background-color: $couleur-fond;
+            box-shadow: 5px 5px 5px $couleur-ombre;
+            margin-bottom: 5%;
+            height: 220px;
+            
+            &__image {
+                object-fit: cover;
+                height: 150px;
+                width: 100%;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+    
+            &__nouveau {
+                background-color: $couleur-tertiaire;
+                color: darken($couleur-tertiaire, 50%);
+                position: relative;
+                margin: -140px 0 116px 70%; 
+                height: 24px;
+                h6 {
+                    padding: 3px 10px;
+                }
+            }
+    
+            &__descriptif {
+                display: flex;
+                flex-direction: column;
+                padding: 10px 0 10px 15px;
+                width: 80%;
+            }
+    
+            &__note {
+                @include note-coeur ($couleur-fond);
             }
         }
+    }
+}
 
-        &__descriptif {
-            display: flex;
-            flex-direction: column;
-            padding: 10px 0 10px 15px;
-            width: 85%;
+@media (min-width: 400px) and (max-width: 599px) {
+    .restaurants{
+        &__liste {
+            & .resto {
+                &__nouveau {
+                    margin: -140px 0 116px 75%;
+                }
+
+                &__descriptif {
+                    width: 85%;
+                }
+            }
         }
+    }
+}
 
-        &__note {
-            @include note-coeur ($couleur-fond)
+@media (min-width: 600px) and (max-width: 799px) {
+    .restaurants{
+        &__liste {
+            & .resto {
+                &__nouveau {
+                    margin: -140px 0 116px 85%;
+                }
+
+                &__descriptif {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) and (max-width: 999px) {
+    .restaurants{
+        &__liste {
+            & .resto {
+                &__nouveau {
+                    margin: -140px 0 116px 88%;
+                }
+
+                &__descriptif {
+                    width: 92%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px){
+    .restaurants{
+        &__liste {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            & .resto {
+                width: 23%;
+
+                &__nouveau {
+                    margin: -140px 0 116px 60%;
+                }
+
+                &__descriptif {
+                    width: 75%;
+                }
+            }
         }
     }
 }
