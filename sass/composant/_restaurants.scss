@@ -20,21 +20,28 @@
             height: 220px;
             
             &__image {
-                object-fit: cover;
+                display: flex;
+                flex-direction: column;
                 height: 150px;
                 width: 100%;
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-            }
-    
-            &__nouveau {
-                background-color: $couleur-tertiaire;
-                color: darken($couleur-tertiaire, 50%);
-                position: relative;
-                margin: -140px 0 116px 70%; 
-                height: 24px;
-                h6 {
-                    padding: 3px 10px;
+                & .resto__photo {
+                    object-fit: cover;
+                    height: 150px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+        
+                & .resto__nouveau {
+                    background-color: $couleur-tertiaire;
+                    color: darken($couleur-tertiaire, 50%);
+                    position: relative;
+                    top: -140px;
+                    right: calc(-97% + 4rem);
+                    width: 4rem;
+                    h6 {
+                        text-align: center;
+                        padding: 0.2rem 0.5rem;
+                    }
                 }
             }
     
@@ -42,7 +49,7 @@
                 display: flex;
                 flex-direction: column;
                 padding: 10px 0 10px 15px;
-                width: 80%;
+                width: calc(90% - 25px);
             }
     
             &__note {
@@ -52,53 +59,6 @@
     }
 }
 
-@media (min-width: 400px) and (max-width: 599px) {
-    .restaurants{
-        &__liste {
-            & .resto {
-                &__nouveau {
-                    margin: -140px 0 116px 75%;
-                }
-
-                &__descriptif {
-                    width: 85%;
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 600px) and (max-width: 799px) {
-    .restaurants{
-        &__liste {
-            & .resto {
-                &__nouveau {
-                    margin: -140px 0 116px 85%;
-                }
-
-                &__descriptif {
-                    width: 90%;
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 800px) and (max-width: 999px) {
-    .restaurants{
-        &__liste {
-            & .resto {
-                &__nouveau {
-                    margin: -140px 0 116px 88%;
-                }
-
-                &__descriptif {
-                    width: 92%;
-                }
-            }
-        }
-    }
-}
 
 @media (min-width: 1000px){
     .restaurants{
@@ -106,17 +66,8 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-
             & .resto {
                 width: 23%;
-
-                &__nouveau {
-                    margin: -140px 0 116px 60%;
-                }
-
-                &__descriptif {
-                    width: 75%;
-                }
             }
         }
     }

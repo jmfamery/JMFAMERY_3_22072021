@@ -52,7 +52,8 @@ h5 {
 
 h6 {
   font-family: "roboto_condensedregular";
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -195,6 +196,7 @@ li {
 .header__logo {
   display: flex;
   justify-content: center;
+  align-self: center;
   object-fit: contain;
   height: 24px;
   width: 100%;
@@ -325,27 +327,34 @@ li {
   height: 220px;
 }
 .restaurants__liste .resto__image {
-  object-fit: cover;
+  display: flex;
+  flex-direction: column;
   height: 150px;
   width: 100%;
+}
+.restaurants__liste .resto__image .resto__photo {
+  object-fit: cover;
+  height: 150px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.restaurants__liste .resto__nouveau {
+.restaurants__liste .resto__image .resto__nouveau {
   background-color: #99E2D0;
   color: #1b6150;
   position: relative;
-  margin: -140px 0 116px 70%;
-  height: 24px;
+  top: -140px;
+  right: calc(-97% + 4rem);
+  width: 4rem;
 }
-.restaurants__liste .resto__nouveau h6 {
-  padding: 3px 10px;
+.restaurants__liste .resto__image .resto__nouveau h6 {
+  text-align: center;
+  padding: 0.2rem 0.5rem;
 }
 .restaurants__liste .resto__descriptif {
   display: flex;
   flex-direction: column;
   padding: 10px 0 10px 15px;
-  width: 80%;
+  width: calc(90% - 25px);
 }
 .restaurants__liste .resto__note {
   display: flex;
@@ -368,30 +377,6 @@ li {
   display: none;
 }
 
-@media (min-width: 400px) and (max-width: 599px) {
-  .restaurants__liste .resto__nouveau {
-    margin: -140px 0 116px 75%;
-  }
-  .restaurants__liste .resto__descriptif {
-    width: 85%;
-  }
-}
-@media (min-width: 600px) and (max-width: 799px) {
-  .restaurants__liste .resto__nouveau {
-    margin: -140px 0 116px 85%;
-  }
-  .restaurants__liste .resto__descriptif {
-    width: 90%;
-  }
-}
-@media (min-width: 800px) and (max-width: 999px) {
-  .restaurants__liste .resto__nouveau {
-    margin: -140px 0 116px 88%;
-  }
-  .restaurants__liste .resto__descriptif {
-    width: 92%;
-  }
-}
 @media (min-width: 1000px) {
   .restaurants__liste {
     display: flex;
@@ -400,12 +385,6 @@ li {
   }
   .restaurants__liste .resto {
     width: 23%;
-  }
-  .restaurants__liste .resto__nouveau {
-    margin: -140px 0 116px 60%;
-  }
-  .restaurants__liste .resto__descriptif {
-    width: 75%;
   }
 }
 .bandeau {
@@ -429,8 +408,8 @@ li {
   margin-top: -30px;
 }
 .bandeau__titre h1 {
-  width: 80%;
-  padding-left: 5%;
+  width: calc(90% - 60px);
+  padding: 0 5%;
 }
 .bandeau__note {
   display: flex;
