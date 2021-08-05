@@ -4,8 +4,7 @@
   "description": "Ohmyfood : liste de restaurant",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css",
-    "prefix": "postcss ./css/style.css --use autoprefixer -d./css/prefixed/"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css ",
   },
   "author": "JM FAMERY",
   "license": "ISC"

@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     margin: 25px 5% 15px 5%;
-    h2{
-        padding-bottom: 10px;
+    h2 {
+        padding-bottom: 5px;
     }
 
     &__liste ul {
@@ -18,7 +18,7 @@
                 display:flex;
                 justify-content: center;
                 align-items: center;
-                background-color: darken($couleur-primaire, 10%);
+                background-color: $couleur-primaire;
                 color: $couleur-inverser-text;
                 border-radius: 20px;
                 height: 1.3rem;
@@ -31,18 +31,23 @@
                 display:flex;
                 align-items: center;
                 background-color: $couleur-fond-autres;
-                box-shadow: 5px 5px 5px $couleur-ombre;
+                box-shadow: 5px 5px 5px $couleur-ombre-autres;
                 border-radius: 20px;
                 height: 4rem;
                 width: 100%;
-                i, h5 {
-                    margin-left: 1.7rem;
+                i {
+                    margin-left: 2rem;
+                    color: $couleur-icone-fonctionnement;
+                } 
+                
+                h5 {
+                    margin-left: 1.5rem;
                 }
                 &:hover {
-                    background-color: lighten($couleur-primaire, 33%);
-                    box-shadow: 5px 5px 5px $couleur-ombre;
+                    background-color: $couleur-fond-autres-hover;
+                    box-shadow: 5px 5px 5px $couleur-ombre-autres;
                         i {
-                            color: darken($couleur-primaire, 10%);
+                            color: $couleur-primaire;
                         }
                 }
             }
@@ -52,11 +57,17 @@
 
 @media (min-width: 1000px){
     .fonctionnement{
+        margin: 25px auto 15px auto;
+        max-width: 1400px;
+        h2 {
+            text-align: center;
+        }
+
         &__liste ul{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            
+            padding: 0 5%;
             & .fonctionnement__detail {
                 width: 33%;
             }

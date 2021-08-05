@@ -1,7 +1,7 @@
 @mixin entrees-plats-desserts{
     display: flex;
     background-color: $couleur-inverser-text;
-    box-shadow: 5px 5px 5px $couleur-ombre;
+    box-shadow: 5px 5px 5px $couleur-ombre-autres;
     border-radius: 10px;
     white-space: nowrap;
     height: 60px;
