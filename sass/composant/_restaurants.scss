@@ -57,11 +57,11 @@
     }
 }
 
-
 @media (min-width: 1000px) {
     .restaurants{
         margin: auto;
         max-width: 1400px;
+        margin-bottom: 30px;
         &__titre {
             text-align: center;
         }

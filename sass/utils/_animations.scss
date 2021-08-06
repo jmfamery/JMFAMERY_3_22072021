@@ -49,7 +49,21 @@
     animation-delay: $delais;
     animation-fill-mode: both;
 }
-/* validation des Entrées, Plats, Déserts */
+
+/* ouverture de la validation des Entrées, Plats, Déserts */
+@keyframes ouverture {
+    0% {width: 0};
+    25% {width: 15px};
+    50% {width: 30px};
+    75% {width: 45px};
+    100% {width: 60px};
+}
+
+@mixin ouverture-valideur {
+    animation : ouverture 0.3s linear
+}
+
+/* Validation des Entrées, Plats, Déserts */
 @keyframes valider {
     0% {transform: rotate(180deg)};
     50% {transform: rotate(270deg)};
@@ -57,5 +71,5 @@
 }
 
 @mixin bouton-valider {
-    animation : valider 0.4s ease-in-out
+    animation : valider 0.3s ease-in-out
 }

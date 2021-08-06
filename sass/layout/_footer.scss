@@ -1,6 +1,7 @@
-.footer{
+.footer {
     background-color: $couleur-inverser-fond;
-    &__logo{
+    &__logo {
+        display: flex;
         filter: invert(100%);
         object-fit: contain;
         height: 15px;
@@ -11,19 +12,19 @@
         padding: 10px 5% 10px 5%;
     }
 
-    &__liste ul{
+    &__liste ul {
         padding: 0;
     }
 
-    &__liste li{
+    &__liste li {
         padding-bottom: 10px;
     }
 
-    &__liste a{
+    &__liste a {
         color: $couleur-inverser-text;        
     }
 
-    &__liste i{
+    &__liste i {
         padding-right: 10px; 
         font-size: 0.8rem;
         width: 0.8rem;  
@@ -32,7 +33,11 @@
 
 @media (min-width: 1000px) {
     .footer{
-        &__liste ul{
+        &__logo {
+            justify-content: center;
+        }
+
+        &__liste ul {
             display: flex;
             flex-direction: row;
             justify-content: space-between;

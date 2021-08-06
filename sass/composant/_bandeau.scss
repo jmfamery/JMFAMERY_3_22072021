@@ -11,18 +11,32 @@
         flex-direction: row;
         align-items: center;
         background-color: $couleur-fond-autres;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-        position: relative;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
         height: 100px;
         margin-top: -30px;
         h1 {
-            width: calc(90% - 60px);
-            padding: 0 5%;
+            width: calc(91% - 60px);
+            padding-left: 5%;
         }
+        
+        & .bandeau__note {
+            @include note-coeur ($couleur-fond-autres)
+            }
     }
+}
 
-    &__note {
-        @include note-coeur ($couleur-fond-autres)
+@media (min-width: 1000px) {
+    .bandeau {
+        &__image img {
+            height: 400px;
+        }
+
+        &__titre {
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 1400px;
+            width: 100%;
+        }
     }
 }

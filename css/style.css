@@ -118,7 +118,25 @@ li {
     z-index: -1;
   }
 }
-/* validation des Entrées, Plats, Déserts */
+/* ouverture de la validation des Entrées, Plats, Déserts */
+@keyframes ouverture {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 15px;
+  }
+  50% {
+    width: 30px;
+  }
+  75% {
+    width: 45px;
+  }
+  100% {
+    width: 60px;
+  }
+}
+/* Validation des Entrées, Plats, Déserts */
 @keyframes valider {
   0% {
     transform: rotate(180deg);
@@ -173,7 +191,7 @@ li {
   flex-direction: row;
   justify-content: space-between;
   height: 30px;
-  padding: 15px 0 10px 0;
+  padding: 15px 4% 10px 4%;
 }
 .header__accueil {
   display: flex;
@@ -378,6 +396,7 @@ li {
   .restaurants {
     margin: auto;
     max-width: 1400px;
+    margin-bottom: 30px;
   }
   .restaurants__titre {
     text-align: center;
@@ -405,37 +424,47 @@ li {
   flex-direction: row;
   align-items: center;
   background-color: #f6f6f6;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  position: relative;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
   height: 100px;
   margin-top: -30px;
 }
 .bandeau__titre h1 {
-  width: calc(90% - 60px);
-  padding: 0 5%;
+  width: calc(91% - 60px);
+  padding-left: 5%;
 }
-.bandeau__note {
+.bandeau__titre .bandeau__note {
   display: flex;
   align-self: center;
   font-size: 1.3rem;
 }
-.bandeau__note:hover {
+.bandeau__titre .bandeau__note:hover {
   background-image: linear-gradient(0deg, #9356dc, #ff79da);
   animation: coeur 0.4s linear;
 }
-.bandeau__note:hover .note__plein {
+.bandeau__titre .bandeau__note:hover .note__plein {
   display: inline;
   mix-blend-mode: lighten;
   background-color: #f6f6f6;
 }
-.bandeau__note:hover .note__vide {
+.bandeau__titre .bandeau__note:hover .note__vide {
   display: none;
 }
-.bandeau__note .note__plein {
+.bandeau__titre .bandeau__note .note__plein {
   display: none;
 }
 
+@media (min-width: 1000px) {
+  .bandeau__image img {
+    height: 400px;
+  }
+  .bandeau__titre {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1400px;
+    width: 100%;
+  }
+}
 .menu {
   display: flex;
   flex-direction: column;
@@ -499,11 +528,12 @@ li {
   color: white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 50px;
+  width: 60px;
   height: 60px;
+  animation: ouverture 0.3s linear;
 }
 .menu__entrees .menu__descriptif-e1:hover .menu__valider i {
-  animation: valider 0.4s ease-in-out;
+  animation: valider 0.3s ease-in-out;
 }
 .menu__entrees .menu__descriptif-e2 {
   display: flex;
@@ -549,11 +579,12 @@ li {
   color: white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 50px;
+  width: 60px;
   height: 60px;
+  animation: ouverture 0.3s linear;
 }
 .menu__entrees .menu__descriptif-e2:hover .menu__valider i {
-  animation: valider 0.4s ease-in-out;
+  animation: valider 0.3s ease-in-out;
 }
 .menu__entrees .menu__descriptif-e3 {
   display: flex;
@@ -599,11 +630,12 @@ li {
   color: white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 50px;
+  width: 60px;
   height: 60px;
+  animation: ouverture 0.3s linear;
 }
 .menu__entrees .menu__descriptif-e3:hover .menu__valider i {
-  animation: valider 0.4s ease-in-out;
+  animation: valider 0.3s ease-in-out;
 }
 .menu__entrees .menu__descriptif-e4 {
   display: flex;
@@ -649,11 +681,12 @@ li {
   color: white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 50px;
+  width: 60px;
   height: 60px;
+  animation: ouverture 0.3s linear;
 }
 .menu__entrees .menu__descriptif-e4:hover .menu__valider i {
-  animation: valider 0.4s ease-in-out;
+  animation: valider 0.3s ease-in-out;
 }
 .menu__plats {
   padding-bottom: 20px;
@@ -712,11 +745,12 @@ li {
   color: white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 50px;
+  width: 60px;
   height: 60px;
+  animation: ouverture 0.3s linear;
 }
 .menu__plats .menu__descriptif-p1:hover .menu__valider i {
-  animation: valider 0.4s ease-in-out;
+  animation: valider 0.3s ease-in-out;
 }
 .menu__plats .menu__descriptif-p2 {
   display: flex;
@@ -762,11 +796,12 @@ li {
   color: white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 50px;
+  width: 60px;
   height: 60px;
+  animation: ouverture 0.3s linear;
 }
 .menu__plats .menu__descriptif-p2:hover .menu__valider i {
-  animation: valider 0.4s ease-in-out;
+  animation: valider 0.3s ease-in-out;
 }
 .menu__plats .menu__descriptif-p3 {
   display: flex;
@@ -812,11 +847,12 @@ li {
   color: white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 50px;
+  width: 60px;
   height: 60px;
+  animation: ouverture 0.3s linear;
 }
 .menu__plats .menu__descriptif-p3:hover .menu__valider i {
-  animation: valider 0.4s ease-in-out;
+  animation: valider 0.3s ease-in-out;
 }
 .menu__desserts {
   padding-bottom: 20px;
@@ -875,11 +911,12 @@ li {
   color: white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 50px;
+  width: 60px;
   height: 60px;
+  animation: ouverture 0.3s linear;
 }
 .menu__desserts .menu__descriptif-d1:hover .menu__valider i {
-  animation: valider 0.4s ease-in-out;
+  animation: valider 0.3s ease-in-out;
 }
 .menu__desserts .menu__descriptif-d2 {
   display: flex;
@@ -925,11 +962,12 @@ li {
   color: white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 50px;
+  width: 60px;
   height: 60px;
+  animation: ouverture 0.3s linear;
 }
 .menu__desserts .menu__descriptif-d2:hover .menu__valider i {
-  animation: valider 0.4s ease-in-out;
+  animation: valider 0.3s ease-in-out;
 }
 .menu__desserts .menu__descriptif-d3 {
   display: flex;
@@ -975,11 +1013,12 @@ li {
   color: white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 50px;
+  width: 60px;
   height: 60px;
+  animation: ouverture 0.3s linear;
 }
 .menu__desserts .menu__descriptif-d3:hover .menu__valider i {
-  animation: valider 0.4s ease-in-out;
+  animation: valider 0.3s ease-in-out;
 }
 
 @media (min-width: 1000px) {
@@ -990,6 +1029,22 @@ li {
   }
   .menu__entrees, .menu__plats, .menu__desserts {
     width: 32%;
+  }
+}
+@media (min-width: 1400px) {
+  .menu {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0;
+  }
+  .menu__entrees {
+    margin: 0 10px 0 70px;
+  }
+  .menu__plats {
+    margin: 0 10px;
+  }
+  .menu__desserts {
+    margin: 0 70px 0 10px;
   }
 }
 .commander {
@@ -1016,6 +1071,7 @@ li {
   background-color: #353535;
 }
 .footer__logo {
+  display: flex;
   filter: invert(100%);
   object-fit: contain;
   height: 15px;
@@ -1040,6 +1096,9 @@ li {
 }
 
 @media (min-width: 1000px) {
+  .footer__logo {
+    justify-content: center;
+  }
   .footer__liste ul {
     display: flex;
     flex-direction: row;
