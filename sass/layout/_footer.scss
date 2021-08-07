@@ -21,7 +21,8 @@
     }
 
     &__liste a {
-        color: $couleur-inverser-text;        
+        color: $couleur-inverser-text;
+        cursor: pointer;        
     }
 
     &__liste i {
