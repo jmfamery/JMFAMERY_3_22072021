@@ -30,8 +30,8 @@
 /* Bouton coeur */
 @keyframes coeur {
     0% {width: 0};
-    50% {width: 8px};
-    100% {width: 16px};
+    50% {width: 0.7rem};
+    100% {width: 1.4rem};
 }
 
 @mixin bouton-coeur {
